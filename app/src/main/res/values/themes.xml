@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Tema principal da aplicação usando Material Design 3 (Views) -->
+	<style name="Theme.SmarthTrashApp" parent="Theme.Material3.DayNight.NoActionBar">
+		<item name="colorPrimary">@color/purple_500</item>
+		<item name="colorPrimaryContainer">@color/purple_700</item>
+		<item name="colorOnPrimary">@color/white</item>
+		<item name="colorSecondary">@color/teal_200</item>
+		<item name="android:statusBarColor">@color/purple_700</item>
+	</style>
+</resources>

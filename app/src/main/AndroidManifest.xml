@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smarttrash.app">
+
+    <!-- Permissão para acessar a internet e se comunicar com o backend Node.js -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permissão para uso da câmera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Indica que o dispositivo deve ter câmera -->
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmarthTrashApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- Tela principal -->
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SmarthTrashApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Tela de câmera (CameraX) -->
+        <activity
+            android:name=".ui.camera.CameraActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SmarthTrashApp" />
+
+        <!-- Tela de resultado da análise -->
+        <activity
+            android:name=".ui.result.ResultActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SmarthTrashApp" />
+
+        <!-- Tela de histórico -->
+        <activity
+            android:name=".ui.history.HistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SmarthTrashApp" />
+
+    </application>
+
+</manifest>

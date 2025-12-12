@@ -1,0 +1,42 @@
+<resources>
+	<string name="app_name">SmartTrash</string>
+
+	<!-- Tela principal -->
+	<string name="button_capture_object">Capturar Objeto</string>
+	<string name="button_history">Histórico</string>
+	<string name="button_retry_status">Atualizar status</string>
+	<string name="loading_status">Carregando status da lixeira</string>
+	<string name="status_online">Lixeira ONLINE</string>
+	<string name="status_offline">Lixeira OFFLINE</string>
+	<string name="status_online_default">A lixeira está pronta para receber novos descartes.</string>
+	<string name="status_offline_default">A lixeira está indisponível no momento. Verifique conexões e energia.</string>
+	<string name="status_error_title">Erro ao consultar status</string>
+	<string name="last_heartbeat">Última atualização: %1$s</string>
+
+	<!-- Tela de câmera -->
+	<string name="button_capture">Capturar</string>
+	<string name="button_close">Fechar</string>
+	<string name="camera_title">Câmera da lixeira</string>
+
+	<!-- Tela de resultado -->
+	<string name="result_discard_allowed_title">DESCARTE PERMITIDO</string>
+	<string name="result_discard_denied_title">DESCARTE NEGADO</string>
+	<string name="result_discard_allowed_message">O objeto %1$s pode ser descartado.</string>
+	<string name="result_discard_denied_message">O objeto %1$s não deve ser descartado.</string>
+	<string name="result_object_label">Objeto identificado</string>
+	<string name="result_confidence_label">Confiança</string>
+	<string name="button_back_home">Voltar para início</string>
+	<string name="analysis_id_format">Análise #%1$d</string>
+
+	<!-- Histórico -->
+	<string name="history_title">Histórico de análises</string>
+	<string name="history_empty">Nenhum histórico disponível ainda.</string>
+	<string name="history_no_date">Data não informada</string>
+	<string name="button_retry_history">Tentar novamente</string>
+	<string name="button_back">Voltar</string>
+	<string name="discard_allowed">DESCARTE PERMITIDO</string>
+	<string name="discard_denied">DESCARTE NEGADO</string>
+
+	<!-- Formatações e textos genéricos -->
+	<string name="confidence_format">Confiança: %1$d%%</string>
+</resources>
